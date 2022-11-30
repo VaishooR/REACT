@@ -1,0 +1,58 @@
+const arr1=[
+  {id:'1',title:'car'},
+  {id:'2',title:'ship'},
+  {id:'3',title:'plane'},
+  {id:'4',title:'bike'},
+  {id:'5',title:'train'},
+]
+
+
+
+
+----------------------
+const filtered=arr1.filter((ele)=>{
+  return ele.id % 2===0;
+})
+console.log(filtered);
+
+
+
+OUTPUT:
+[[object Object] {
+  id: "2",
+  title: "ship"
+}, [object Object] {
+  id: "4",
+  title: "bike"
+}]
+-----------------------
+
+
+
+
+
+
+-----------------------
+const filtered=arr1.filter((ele)=>{
+  return ele.id % 2!==0;
+})
+console.log(filtered);
+
+
+
+OUTPUT:
+[[object Object] {
+  id: "1",
+  title: "car"
+}, [object Object] {
+  id: "3",
+  title: "plane"
+}, [object Object] {
+  id: "5",
+  title: "train"
+}]
+------------------------
+
+
+
+
