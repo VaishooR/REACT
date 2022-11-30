@@ -1,0 +1,16 @@
+CONCAT:
+It is used to add elements of two or more arrays.
+
+var arr1=[1,2,3,4];
+var arr2=[5,6,7,8,9,10,11];
+var arr3=[12,13,14,15];
+
+
+
+var result=arr1.concat(arr2);
+console.log(result);                      // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+
+
+var result=arr1.concat(arr2,arr3);
+console.log(result);                      // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
