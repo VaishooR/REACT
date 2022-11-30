@@ -1,0 +1,43 @@
+SLICE vs SPLICE:
+---------------
+
+Slice and splice are methods used on JavaScript arrays to retrieve certain elements or remove elements from the array.
+If you have to alter the content of the array, splice is the way to go, but if you just want to obtain a subarray, slice should be your choice.
+
+
+--------------------------
+slice --> returns a piece of the array but it doesn’t affect the original array. 
+splice --> changes the original array by removing, replacing, or adding values and returns the affected values.
+
+slice - means cut into pices
+splice - means to join things together
+
+
+--------------------------
+SLICE:
+Syntax:
+array.slice(start, end)
+
+start denotes the index at which the array starts slicing.
+end denotes the index at which the array stops slicing.
+
+The returned value of the slice method is an array of the values found between start and end excluding the value at end.
+
+If end is not specified, the length of the array would be used. Hence, all values from the start index would be returned.
+
+It returns a piece of the array but it doesn’t affect the original array. 
+----------------------------
+
+
+----------------------------
+SPLICE:
+Syntax
+array.splice(start, deleteCount, newElem1, newElem2, ..., newElemN);
+
+start denotes the index from which the method will start its operation on the array.
+deleteCount denotes the number of values to be deleted from the start. If the value is 0, nothing will be deleted.
+newElem1 to newElemN denote the values that would be added after the start.
+----------------------------
+
+
+
