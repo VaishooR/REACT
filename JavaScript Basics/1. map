@@ -1,0 +1,31 @@
+const arr1=[
+  {id:'1',title:'car'},
+  {id:'2',title:'ship'},
+  {id:'3',title:'plane'},
+  {id:'4',title:'bike'},
+  {id:'5',title:'train'},
+]
+-----------------------
+const newarr= arr1.map((ele)=>{
+  return ele.title;
+});
+console.log(newarr);
+
+
+
+OUTPUT:
+["car", "ship", "plane", "bike", "train"]
+------------------------
+
+------------------------
+const newarr= arr1.map((ele)=>{
+  return ele.title.toUpperCase();
+});
+console.log(newarr);
+
+
+
+OUTPUT:
+["CAR", "SHIP", "PLANE", "BIKE", "TRAIN"]
+-------------------------
+
