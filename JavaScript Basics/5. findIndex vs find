@@ -1,0 +1,33 @@
+findIndex() method:     It returns the position of the specified element.
+find() method:    It returns the element itself from the array.
+
+
+Example:
+
+var data=[
+  {id:'1',title:'first'},
+  {id:'2',title:'second'},
+  {id:'3',title:'third'},
+  {id:'4',title:'fourth'},
+]
+
+--------------------------
+const dataIndex= data.findIndex((ele)=>{
+  return ele.id=='4'
+});
+console.log(dataIndex);                               // [object Object] {
+                                                              id: "4",
+                                                              title: "fourth"
+                                                         }
+----------------------------                                                       
+                            
+                            
+                            
+                            
+                                                         
+----------------------------
+const dataElement= data.find((ele)=>{
+  return ele.id=='4'
+});
+console.log(dataElement);                             // 3
+----------------------------
