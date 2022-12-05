@@ -1,0 +1,12 @@
+To create:
+npx create-react-app myreactapp
+cd myreactapp
+code .
+
+
+To run:
+npm start
+Developer server runs in localhost:3000
+
+
+What is webpack?
