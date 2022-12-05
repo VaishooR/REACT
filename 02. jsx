@@ -1,0 +1,22 @@
+Jsx:
+const heading=<h1 className="site-setting"> Hello, React </h1>
+
+No Jsx:
+const heading= React.createElement('h1',{className:'site-heading'},'Hello-React')
+
+Internally React uses this createElement method, even when we use jsx.
+
+
+
+
+
+               Differences
+       HTML                  JSX
+       
+       class                 className
+       onclick               onClick
+       <img>                 <img/>
+       
+       To use a variable into a jsx:
+       Ex: const name= 'Tanya';
+           const heading= <h1> Hello {name} </h1>
