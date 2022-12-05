@@ -9,4 +9,12 @@ npm start
 Developer server runs in localhost:3000
 
 
+In src folder, delete all files except index.js and index.css
+
+In chrome, type react development tools for chrome. Click Add Extension. 
+Now open developer tools, check components, profile.
+
+
+
+
 What is webpack?
