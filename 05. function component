@@ -1,0 +1,84 @@
+In function component, we simply use return() method.
+In class component, we extend component class, use render() method and then return().
+
+
+import { Component} from 'react';
+
+const TableHead=()=>{                  // function component
+    return(
+        <thead>
+        <th>
+            <td>Name</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Phone</td>
+        </th>
+        </thead>
+    )
+}
+
+
+const TableBody=()=>{                        // function component
+    return(
+        <tbody>
+            <tr>
+                <td>Vaishnavi</td>
+                <td>25</td>
+                <td>Chennai</td>
+                <td>668944</td>
+            </tr>
+            <tr>
+                <td>Prajeeth</td>
+                <td>10</td>
+                <td>Texas</td>
+                <td>487424</td>
+            </tr>
+            <tr>
+                <td>Aishwarya</td>
+                <td>30</td>
+                <td>Austin</td>
+                <td>895356</td>
+            </tr>
+            <tr>
+                <td>Mommy</td>
+                <td>55</td>
+                <td>Kalpakkm</td>
+                <td>563468</td>
+            </tr>
+        </tbody>
+    )
+}
+
+class Table extends Component{                // class component
+    render(){
+        return(
+            <table>
+                <TableHead/>
+                <TableBody/>
+            </table>
+        )
+    }
+}
+
+export default Table;
+
+
+
+
+
+
+
+
+In index.js file:
+
+import Table from './Table';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <h1>Table 1</h1>
+    <Table/>
+    <h1>Table 2</h1>
+    <Table/>
+  </React.StrictMode>
+);
