@@ -1,0 +1,30 @@
+Create a new file App.js in src folder.
+
+import { Component} from 'react';
+
+class App extends Component {
+    render(){
+      return (
+        <div className="App">
+          <h1>Hello World Vaishoo</h1>
+        </div>
+      )
+    }
+}
+
+export default App;
+
+
+
+In index.js file
+
+import App from './App';
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App/>               //The imported component has to be mentioned here
+  </React.StrictMode>
+);
