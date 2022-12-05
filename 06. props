@@ -1,0 +1,5 @@
+hard-code means:
+embedding data directly into the source code of a program.
+it remains static.
+
+To make it dynamic, we use props here.
